@@ -24,7 +24,7 @@
     <body>
         <div id="container"></div>
         <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBekFxEvyoBTaRSo9i3PJ3wNVdAVsNbElg&libraries=places&v=weekly" defer></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&v=weekly" defer></script>
          <!-- Load React. -->
          <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
          <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
