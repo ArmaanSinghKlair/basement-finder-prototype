@@ -1,0 +1,324 @@
+.header--search-bar--icon{
+    background:var(--light-primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.search-bar{
+    align-items: center;
+    position: relative;
+}
+
+
+.search-header{
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+}
+.search-header > *{
+    margin: 0 1rem;
+}
+
+.search-results{
+    position: absolute;
+    display: block;
+    top: 110%;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.25rem 0.25rem lightgrey;
+    z-index:2;
+}
+
+.search-results--result{
+    border-bottom: solid 1px var(--light-primary);
+}
+
+.filters--filter{
+    height: 100%;
+}
+.filters--filter > span{
+    align-items: center;
+    justify-content: space-between;
+    background: var(--light-primary);
+    border-radius: 2rem;
+    padding: 0 0.8rem;
+    color: white;
+    font-size: 1.5rem;
+    height: 60%;
+    position: relative;
+    top: 20%;
+    font-weight: 100;
+    cursor:pointer;
+}
+
+.filters--filter span .material-icons{
+    color: white;
+}
+
+
+.filters{
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.filters > *{
+    margin:0 1rem;
+}
+
+.map{
+    position: relative;
+    
+}
+.map-alt{
+    height: 100%;
+    width: 100%;
+}
+
+.map-alt-overlay{
+    height: inherit;
+}
+.actual-map{
+    height:100%;
+    width: 100%;
+}
+
+.price-dialog{
+    z-index: 2;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background: white;
+    box-shadow: 0 0 1rem 0.5rem lightgrey;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    align-items:stretch;
+    justify-content: space-between
+}
+.price{
+    position: relative
+}
+.search-result-basements{
+    position: relative;
+    top: 10%;
+    width: 90%;
+    right: 5%;
+    border: solid 1px lightgray;
+    border-radius:1rem;
+    height: 80%;
+    overflow: auto;
+}
+
+
+.search-result-basement{
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center; 
+    border-bottom: solid 1px lightgray;
+}
+
+.search-result-basement-address{
+    font-size: 1.5rem;
+    width: 80%;
+}
+.search-result-basement-price{
+    font-weight: bold;
+}
+
+.login-form-container button.submit{
+    padding: 1.5rem;
+    background: var(--light-primary);
+    border: none;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-form-container input{
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem 1.5rem;
+}
+
+.dashboard-body{
+    background: #f1f1f1;
+}
+
+.dashboard-basements, .dashboard-profile{
+    background: white;
+    border: solid 1px lightgray;
+    padding: 2rem 2rem 2rem 0;
+}
+.dashboard-basements h4{
+    font-size: 3rem;
+    width: 80%;
+    
+}
+.dashboard-basements{
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    padding: 2rem
+}
+.dashboard-basements-header{
+    justify-content: space-between;
+    align-items: center;
+    width:85%;
+    margin: auto;
+}
+.dashboard-basement .material-icons{
+    font-size: xxx-large;
+}
+.dashboard-basement{
+    justify-content: flex-start;
+    border: solid 1px lightgray;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+.dashboard-basement:hover{
+    background: #f1f1f1;
+}
+.info--sub-sub-info{
+    white-space: nowrap;
+    width: 200px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.9rem;
+    text-align: center;
+}
+.info--main-info{
+    font-size: 1.9rem;
+}
+
+.info--sub-info{
+    font-size: 1.9rem;
+}
+
+.dashboard-basements--no-basements{
+    display: flex;
+    align-items: center;
+    border: solid 1px lightgray;
+    padding: 1rem;
+}
+.dashboard-basement--info{
+    align-items:center;
+}
+
+.dashboard-basement-cta button{
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: none;
+    background: tomato;
+    color: white;
+    box-shadow: 1px 1px 4px 0px black;
+    cursor:pointer;
+}
+
+.dashboard-basement-cta button:active{
+    box-shadow: none;
+}
+
+.dashboard-basement-cta{
+    position: fixed;
+    right: 4rem;
+    top: 0;
+    padding: 0.5rem;
+}
+
+.dashboard-profile{
+    justify-content: flex-start;
+    align-items: stretch;
+    background: var(--medium-primary);
+    height: 100%;;
+
+}
+.dashboard-profile:nth-child(n-1){
+    border-bottom: solid 1px lightgray;
+}
+
+.dashboard-profile > *{
+    margin: 1rem 0;
+}
+
+.dashboard-profile--options{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: white;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 2rem 2rem 0;
+    margin: 0;
+    
+}
+
+.dashboard-profile--options:hover{
+    background: var(--light-primary);
+}
+.dashboard-profile--options .material-icons{
+    font-size:x-large;
+    color:white;
+}
+
+.dashboard-profile .user-info{
+    align-items: center;
+    color: white;
+}
+
+.user-info h1{
+    color: white;
+    font-size: 2rem;
+}
+
+.dashboard-profile .user-info .material-icons{
+    color: white;
+}
+
+.dashboard-profile .user-info .material-icons{
+    font-size: xxx-large;
+}
+
+.add-basement input{
+    background: #f1f1f1;
+    margin:0;
+    width:100%;
+}
+
+.add-basement > *{
+    margin:1rem 0;
+}
+.add-basement label{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-basement{
+    width: 80%;
+}
+
+.add-basement #basement-location-search{
+    margin:auto auto auto 0;
+}
+
+.dashboard-basement-details .place-id{
+    text-overflow: ellipsis;
+    width: 37vmax;
+    overflow: hidden;
+}
+
+.basement-image{
+    width:250px;
+    height: 200px;
+}

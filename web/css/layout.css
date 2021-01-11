@@ -1,0 +1,113 @@
+.flex{
+    display: flex;
+}
+.flex-column{
+    flex-flow: column wrap;
+}
+.flex-row{
+    flex-flow: row wrap;
+}
+.grid{
+    display: grid;
+}
+.grid-center{
+    display: grid;
+    place-items: center;
+}
+#container{
+    height: inherit;
+}
+.main-container{
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 8% auto;
+    grid-template-areas: "header"
+        "searchHeader"
+        "body";
+    height: inherit;
+}
+
+.main-login-container{
+    grid-template-columns: 100%;
+    grid-template-rows: 10% auto;
+    grid-template-areas: "header"
+        "loginBody";
+    height: inherit;
+}
+
+.login-body-container{
+    grid-area: loginBody;
+}
+.login-form-container{
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 2rem 4rem;
+    border: solid 1px lightgray;
+    border-radius: 1rem;
+    width: 30%;
+}
+.login-form-container > *{
+    margin: 2rem 0;
+}
+
+.login-form-container input{
+    background: #f1f1f1;
+    display: block;
+}
+
+.header{
+    grid-area: header;
+}
+.map{
+    grid-area: map;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+
+.search-results{
+    grid-area: searchResults;
+}
+
+.body{
+    grid-area: body;
+    grid-template-columns:auto 25%;
+    grid-template-rows: 100%;
+    grid-template-areas: "map searchResults";
+}
+
+.search-header{
+    grid-area: searchHeader;
+}
+
+.search-results--result{
+    align-items: center;
+}
+
+.search-results--result:hover{
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+.map-alt{
+    background-image: url("../res/mapLoading.jpg");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.dashboard-basements{
+    grid-area: dashboardBasements;
+}
+
+.dashboard-profile{
+    grid-area: dashboardProfile;
+}
+
+.dashboard-body{
+    grid-template-columns: 25% auto;
+    grid-gap: 2rem;
+    grid-template-areas: "dashboardProfile dashboardBasements";
+    padding: 2rem 0;
+}

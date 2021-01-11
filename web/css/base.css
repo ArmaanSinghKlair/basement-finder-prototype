@@ -1,0 +1,82 @@
+:root{
+    --light-primary: #88BDBC;
+    --medium-primary: #254E58;
+    --dark-primary: #112D32;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+p, a, h1, h2, h3, h4, h5, h6, ul, li, div, span, section,input, select, option{
+    color: var(--dark-primary);
+    font-family: 'Roboto', sans-serif;
+}
+
+p, a, ul, li, div, span, section, input, select{
+    font-size: 2rem;
+}
+
+h1, h2, h3, h4,h5 ,h6{
+    font-size: 3.5rem;
+}
+
+.material-icons{
+    padding: 0.5rem;
+}
+[type="checkbox"]{
+    margin: 0 0.5rem;
+}
+input{
+    padding: 0.6rem 3rem;
+    border: none;
+    outline:none;
+    font-size: 1.8rem;
+}
+
+.modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.25rem 0.25rem lightgrey;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.overlay{
+    position: relative;
+    width:100%;
+    height: 100%;
+    z-index:1;
+    background: rgba(255,255,255, 0.15);
+}
+
+.center{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.error{
+    color:red;
+    font-size: 1.8rem;
+}
