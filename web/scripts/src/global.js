@@ -1,3 +1,3 @@
 export const ENV={
-    PATH:"http://localhost:8084/basement-finder/"
-}
+    PATH:"http://localhost:8080/basement-finder/"
+};
